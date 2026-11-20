@@ -2,23 +2,46 @@
 
 **Bring more of your website's content to the surface.**
 
-Help your coding agent make your website's content easier to find, edit and maintain—without changing what makes your website unique.
+Surface Content is a free, open-source skill for coding agents that makes the content of custom websites easier to find, edit and maintain.
 
-Free and open source. Works with or without Surface CMS.
+Keep what makes your website unique while making more of its content independently editable.
+
+Works with or without Surface CMS.
 
 > **Early candidate:** This repository is being prepared for its first release. Installation instructions describe documented agent capabilities; the skill has not yet been qualified in representative agent and website workflows. Review the exact revision before trying it on a disposable branch. No stable release is announced yet.
 
 ## What it does
 
-Surface Content is a portable [Agent Skill](https://agentskills.io/specification) for custom websites. It helps a coding agent recognize content hidden in application code, choose a sensible editorial home, and preserve the site's design, behavior, ownership and ability to adopt future framework releases.
+Custom websites often contain editorial content intertwined with application code, components and presentation logic. This can make even ordinary content changes unnecessarily dependent on developers and coding agents.
 
-It can review a whole website, make a cohesive set of worthwhile improvements, help with a particular page, or guide normal page development. It may recommend leaving well-organized content alone. It does not prescribe a CMS, markup syntax, folder structure or framework. Astro and Next.js examples illustrate the principles; other frameworks are welcome. Actual operation in a particular agent or framework is not guaranteed.
+Surface Content helps identify worthwhile opportunities to make that content independently maintainable using established, framework-native practices.
 
-If an applicable Surface CMS contract already exists, the agent can maintain its relevant mappings in the same authorized contribution. A contract-only correction can be sufficient. If there is no contract, the skill works normally and adds none. No Surface login, API or hosted service is needed. The skill does not make every file or region writable in Surface; the product's own eligibility and Save checks still govern.
+It can be used to:
+
+- Review an entire website for improvement opportunities.
+- Make more of an existing website's content independently editable.
+- Improve the organization of a particular page or collection.
+- Establish maintainable content structures during ongoing website development.
+
+Surface Content preserves your website's design, functionality, ownership boundaries and ability to adopt future framework releases. It does not prescribe a framework, content format, folder structure or CMS.
+
+Surface Content is framework-agnostic by design. Its guidance follows your website's existing architecture and conventions. The initial reference examples feature Astro and Next.js.
+
+Sometimes the best recommendation is to leave well-organized content exactly where it is.
+
+## Using Surface Content with Surface CMS
+
+Surface Content works independently of Surface CMS.
+
+If your website already has an applicable Surface CMS configuration (`surface.config.json`), the skill can identify opportunities to make more content editable in Surface and update the existing configuration as part of the same contribution. Sometimes a configuration-only change is all that is needed.
+
+Once those changes are merged, you may find more of your website's content independently editable in your Content Library in Surface CMS. Actual editability remains subject to Surface CMS's eligibility and Save checks.
+
+If you don't use Surface CMS, no problem. Surface Content introduces no CMS dependencies or proprietary markup into your website and does not create a Surface configuration. No Surface account or hosted connection is needed.
 
 ## Get the skill
 
-The package is [`skills/surface-content/`](skills/surface-content/), including `SKILL.md`, both references, and the license. Inspect the contents at a reviewed commit or release. Copy or install the **whole directory**, not just the main instruction file.
+The portable [Agent Skill](https://agentskills.io/specification) package is [`skills/surface-content/`](skills/surface-content/), including `SKILL.md`, both references, and the license. Inspect the contents at a reviewed commit or release. Copy or install the **whole directory**, not just the main instruction file.
 
 ### Manual installation
 
@@ -56,7 +79,7 @@ Use these once the skill is available to your agent. In a monorepo, name the int
 
 ### Improve my website
 
-> Use the Surface Content skill to make more of my website's content independently editable. Preserve its design, functionality and framework conventions. If an existing Surface CMS contract is present, update it where appropriate. Submit your improvements in one Pull Request.
+> Use the Surface Content skill to make more of my website's content independently editable. Preserve its design, functionality and ability to adopt future framework releases. Submit your improvements in one Pull Request.
 
 ### Improve a particular page
 
